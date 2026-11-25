@@ -1,0 +1,7 @@
+{
+  "id": "top-words-ordering",
+  "title": "Word frequency ignores case, Arabic and tie order",
+  "description": "top_words in wordstats.py gives poor results. 'The the THE' is counted as three different words, Arabic text produces no words at all, and words with equal counts come out in the order they appeared instead of alphabetically.",
+  "category": "text",
+  "difficulty": "medium"
+}

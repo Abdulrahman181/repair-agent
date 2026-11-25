@@ -1,0 +1,7 @@
+{
+  "id": "split-bill-remainder",
+  "title": "Split bill loses cents",
+  "description": "split_bill in billsplit.py loses money. Splitting 100 cents between 3 people gives shares that add up to 99, not 100.",
+  "category": "arithmetic",
+  "difficulty": "easy"
+}

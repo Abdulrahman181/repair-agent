@@ -1,0 +1,7 @@
+{
+  "id": "merge-intervals",
+  "title": "Interval merging misses some overlaps",
+  "description": "merge_intervals in intervals.py does not merge everything it should. Intervals that only touch, such as (1, 2) and (2, 3), stay separate, and the result is wrong when the input list is not sorted.",
+  "category": "logic",
+  "difficulty": "medium"
+}

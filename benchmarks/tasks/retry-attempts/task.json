@@ -1,0 +1,7 @@
+{
+  "id": "retry-attempts",
+  "title": "Retry decorator gives up early and hides errors",
+  "description": "The retry decorator in retrying.py is unreliable. A function that succeeds on its third call is not rescued by retry(3), and when every attempt fails the caller silently gets None instead of an error.",
+  "category": "error-handling",
+  "difficulty": "medium"
+}

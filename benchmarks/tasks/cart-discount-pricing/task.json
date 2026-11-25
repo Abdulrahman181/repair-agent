@@ -1,0 +1,7 @@
+{
+  "id": "cart-discount-pricing",
+  "title": "Cart totals are far too large and discounts are off",
+  "description": "Cart totals are wrong. An item priced 250 cents with quantity 2 gives a total of 5000 instead of 500, and percentage discounts produce wrong amounts. Prices are in integer cents.",
+  "category": "multi-file",
+  "difficulty": "medium"
+}

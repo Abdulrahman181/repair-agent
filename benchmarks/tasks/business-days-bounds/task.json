@@ -1,0 +1,7 @@
+{
+  "id": "business-days-bounds",
+  "title": "Business day count is one too high",
+  "description": "business_days_between in bizdays.py counts one day too many in some ranges. From Monday 2024-01-01 to Friday 2024-01-05 it should be 4 but reports 5, and a range from a date to itself should be 0.",
+  "category": "boundaries",
+  "difficulty": "easy"
+}

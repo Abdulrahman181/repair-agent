@@ -1,0 +1,55 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "RepairAgent: selfcheck (no LLM)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "repairagent",
+      "args": ["selfcheck"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "RepairAgent: list tasks",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "repairagent",
+      "args": ["tasks"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "RepairAgent: run one task (uses .env)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "repairagent",
+      "args": ["run", "${input:taskId}"],
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "RepairAgent: full evaluation (uses .env)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "repairagent",
+      "args": ["eval", "--repeats", "3"],
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Pytest: current file",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["${file}"],
+      "console": "integratedTerminal"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "taskId",
+      "type": "promptString",
+      "description": "Task id (run the 'tasks' command to list them)",
+      "default": "paginate-off-by-one"
+    }
+  ]
+}

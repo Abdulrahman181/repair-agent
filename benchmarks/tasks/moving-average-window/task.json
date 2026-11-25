@@ -1,0 +1,7 @@
+{
+  "id": "moving-average-window",
+  "title": "Moving average drops the last window",
+  "description": "moving_average in smoothing.py returns one value too few. For [1, 2, 3, 4, 5] with a window of 3 it should return three averages but returns only two.",
+  "category": "off-by-one",
+  "difficulty": "easy"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "csv-line-quotes",
+  "title": "CSV parser breaks on quoted fields",
+  "description": "parse_line in csvline.py mishandles quoting. A field like \"b,c\" in quotes is split into two fields, and a doubled quote inside a quoted field is not turned into one literal quote.",
+  "category": "parsing",
+  "difficulty": "hard"
+}

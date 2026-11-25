@@ -1,0 +1,7 @@
+{
+  "id": "lru-cache-recency",
+  "title": "LRU cache evicts the wrong entry",
+  "description": "LRUCache in lrucache.py evicts entries that were used recently. After reading a key it can still be the next one evicted, so it behaves like a plain FIFO cache.",
+  "category": "data-structure",
+  "difficulty": "medium"
+}

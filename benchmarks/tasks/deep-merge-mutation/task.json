@@ -1,0 +1,7 @@
+{
+  "id": "deep-merge-mutation",
+  "title": "Config merge changes its inputs",
+  "description": "deep_merge in deepmerge.py has side effects. After calling it, the original base dictionary has been changed, which corrupts shared default settings used elsewhere in the program.",
+  "category": "state",
+  "difficulty": "medium"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "slugify-separators",
+  "title": "Slugs contain repeated and trailing hyphens",
+  "description": "slugify in slug.py produces ugly slugs. Text with punctuation or several spaces in a row gives results like 'hello---world--' instead of 'hello-world'.",
+  "category": "string",
+  "difficulty": "easy"
+}

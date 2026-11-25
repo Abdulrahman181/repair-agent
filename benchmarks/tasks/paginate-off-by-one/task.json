@@ -1,0 +1,7 @@
+{
+  "id": "paginate-off-by-one",
+  "title": "Pagination returns the wrong slice",
+  "description": "paginate(items, page, per_page) in pager.py returns the wrong items. Asking for the first page gives what should be the second page, and the last page comes back empty. Pages are numbered from 1.",
+  "category": "off-by-one",
+  "difficulty": "easy"
+}

@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "test",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": ["-m", "pytest"],
+      "group": { "kind": "test", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "lint",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": ["-m", "ruff", "check", "src", "tests"],
+      "problemMatcher": []
+    },
+    {
+      "label": "selfcheck",
+      "type": "shell",
+      "command": "${command:python.interpreterPath}",
+      "args": ["-m", "repairagent", "selfcheck"],
+      "problemMatcher": []
+    }
+  ]
+}

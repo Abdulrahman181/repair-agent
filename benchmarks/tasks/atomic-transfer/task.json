@@ -1,0 +1,7 @@
+{
+  "id": "atomic-transfer",
+  "title": "Transfers can lose or create money",
+  "description": "transfer in bank.py is not safe. Transferring more than the balance does not fail and leaves the source negative, and when a transfer fails part way the source account has already been debited.",
+  "category": "error-handling",
+  "difficulty": "hard"
+}
